@@ -103,9 +103,9 @@ def main():
             # Parse the product details
             product_details = list(parse_item(product_html))
             for product in product_details:
-                print(product)
+               # print(product)
                 all_products.append(product)  # Add to the list
-
+            print(all_products)
             time.sleep(0.4)  # Throttle requests to avoid rate limiting
 
     # Export all collected products to a CSV file
